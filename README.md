@@ -10,6 +10,7 @@ docker build -t honto/kyototycoon:latest .
 
 ```
 docker run -p 1978:1978 \
+           -p 11401:11401 \
            -d --name ap-cache \
            -v /var/log/kyototycoon:/var/ktserver/ \
            honto/kyototycoon
