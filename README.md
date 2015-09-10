@@ -1,4 +1,4 @@
-# 分散キャッシュ構築手順
+# KyotoTycoon構築手順
 
 ## ビルドコマンド
 
@@ -15,4 +15,11 @@ docker run -p 1978:1978 \
            -v /var/log/kyototycoon:/var/ktserver/ \
            honto/kyototycoon
 ```
+
+### ポート説明
+
+| ポート | 用途 |
+|--------|--------|
+| 1978 | KyotoTycoon用 |
+| 11401 | Memcache用 |
 
