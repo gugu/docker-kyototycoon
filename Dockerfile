@@ -22,6 +22,10 @@ RUN cd kyototycoon-0.9.56;make install
 RUN cp ./kyototycoon-0.9.56/lab/ktservctl /usr/local/sbin/
 RUN cp ./kyototycoon-0.9.56/lab/ktservctl /etc/rc.d/init.d/ktserver
 
+# add memcache interchangeable
+RUN sed -i '65a\cmd="$cmd -plsv /usr/local/src/kyototycoon-0.9.56/ktplugservmemc.so"' /etc/rc.d/init.d/ktserver
+RUN sed -i '66a\cmd="$cmd -plex port=11401#opts=f#tout=10"' /etc/rc.d/init.d/ktserver
+
 # clean
 RUN yum clean all
 RUN rm -rf /tmp/* /var/tmp/*
