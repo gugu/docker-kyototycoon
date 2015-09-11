@@ -6,7 +6,10 @@
 docker build -t honto/kyototycoon:latest .
 ```
 
+
 ## コンテナ起動
+
+### docker
 
 ```
 docker run -p 1978:1978 \
@@ -15,6 +18,13 @@ docker run -p 1978:1978 \
            -v /var/log/kyototycoon:/var/ktserver/ \
            honto/kyototycoon
 ```
+
+### docker-compose
+
+```
+docker-compose up -d
+```
+
 
 ### ポート説明
 

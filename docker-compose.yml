@@ -1,0 +1,61 @@
+ktserver1:
+  image: honto/kyototycoon:latest
+  ports:
+    - 11211:11401
+  volumes:
+    - /var/log/ktserver1:/var/ktserver/
+
+ktserver2:
+  image: honto/kyototycoon:latest
+  ports:
+    - 11212:11401
+  volumes:
+    - /var/log/ktserver2:/var/ktserver/
+
+ktserver3:
+  image: honto/kyototycoon:latest
+  ports:
+    - 11214:11401
+  volumes:
+    - /var/log/ktserver3:/var/ktserver/
+
+ktserver4:
+  image: honto/kyototycoon:latest
+  ports:
+    - 11207:1978
+    - 11217:11401
+  volumes:
+    - /var/log/ktserver4:/var/ktserver/
+
+ktserver5:
+  image: honto/kyototycoon:latest
+  ports:
+    - 11210:1978
+    - 11220:11401
+  volumes:
+    - /var/log/ktserver5:/var/ktserver/
+
+ktserver6:
+  image: honto/kyototycoon:latest
+  ports:
+    - 11203:1978
+    - 11213:11401
+  volumes:
+    - /var/log/ktserver6:/var/ktserver/
+
+ktserver7:
+  image: honto/kyototycoon:latest
+  ports:
+    - 11205:1978
+    - 11215:11401
+  volumes:
+    - /var/log/ktserver7:/var/ktserver/
+
+ktserver8:
+  image: honto/kyototycoon:latest
+  ports:
+    - 11206:1978
+    - 11216:11401
+  volumes:
+    - /var/log/ktserver8:/var/ktserver/
+
