@@ -39,4 +39,5 @@ RUN yum clean all \
               kyotocabinet-1.2.76.tar.gz \
               kyototycoon-0.9.56.tar.gz
 
+EXPOSE 1978 11401
 CMD /etc/rc.d/init.d/ktserver start && tail -F /var/ktserver/log
